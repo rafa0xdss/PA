@@ -1,0 +1,12 @@
+print('Gerador de PA')
+print('-=' * 10)
+ptermo = ptermo1 = int(input('Digite o primeiro termo: '))
+razao = int(input('Digite a razão da PA: '))
+termino = False
+
+while not termino:
+    print('{} - '.format(ptermo), end='')
+    ptermo += razao
+    if (ptermo - ptermo1)/razao == 10:
+        termino = True
+print('FIM')
